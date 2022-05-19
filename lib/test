@@ -1,0 +1,180 @@
+        import 'package:flutter/material.dart';
+        
+        
+        class LoginpageWidget extends StatefulWidget {
+        @override
+        _LoginpageWidgetState createState() => _LoginpageWidgetState();
+        }
+        
+        class _LoginpageWidgetState extends State<LoginpageWidget> {
+        @override
+        Widget build(BuildContext context) {
+        // Figma Flutter Generator LoginpageWidget - FRAME
+        
+        return Container(
+      width: 390,
+      height: 844,
+      decoration: BoxDecoration(
+          color : Color.fromRGBO(255, 255, 255, 1),
+  ),
+      child: Stack(
+        children: <Widget>[
+          Positioned(
+        top: 574,
+        left: -43,
+        child: Container(
+        width: 501,
+        height: 385,
+        decoration: BoxDecoration(
+          boxShadow : [BoxShadow(
+          color: Color.fromRGBO(0, 0, 0, 0.25),
+          offset: Offset(0,4),
+          blurRadius: 4
+      )],
+      color : Color.fromRGBO(63, 201, 121, 1),
+      borderRadius : BorderRadius.all(Radius.elliptical(501, 385)),
+  )
+      )
+      ),Positioned(
+        top: 0,
+        left: -24,
+        child: Container(
+        width: 414,
+        height: 844,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('assets/images/1554467249phpddgcst1.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      ),Positioned(
+        top: 317,
+        left: 53,
+        child: Container(
+        width: 309,
+        height: 88,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(30),
+            topRight: Radius.circular(30),
+            bottomLeft: Radius.circular(30),
+            bottomRight: Radius.circular(30),
+          ),
+      color : Color.fromRGBO(255, 255, 255, 1),
+      border : Border.all(
+          color: Color.fromRGBO(0, 0, 0, 1),
+          width: 3,
+        ),
+  )
+      )
+      ),Positioned(
+        top: 467,
+        left: 53,
+        child: Container(
+        width: 309,
+        height: 88,
+        decoration: BoxDecoration(
+          borderRadius : BorderRadius.only(
+            topLeft: Radius.circular(30),
+            topRight: Radius.circular(30),
+            bottomLeft: Radius.circular(30),
+            bottomRight: Radius.circular(30),
+          ),
+      color : Color.fromRGBO(255, 255, 255, 1),
+      border : Border.all(
+          color: Color.fromRGBO(0, 0, 0, 1),
+          width: 3,
+        ),
+  )
+      )
+      ),Positioned(
+        top: -174,
+        left: -306,
+        child: Container(
+        width: 501,
+        height: 385,
+        decoration: BoxDecoration(
+          color : Color.fromRGBO(41, 184, 101, 0.949999988079071),
+      borderRadius : BorderRadius.all(Radius.elliptical(501, 385)),
+  )
+      )
+      ),Positioned(
+        top: 663,
+        left: -68,
+        child: Container(
+        width: 501,
+        height: 385,
+        decoration: BoxDecoration(
+          color : Color.fromRGBO(41, 184, 101, 0.949999988079071),
+      borderRadius : BorderRadius.all(Radius.elliptical(501, 385)),
+  )
+      )
+      ),Positioned(
+        top: 493,
+        left: 138,
+        child: Text('Student', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(0, 0, 0, 1),
+        fontFamily: 'Inter',
+        fontSize: 36,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ),)
+      ),Positioned(
+        top: 339,
+        left: 165,
+        child: Text('Staff', textAlign: TextAlign.left, style: TextStyle(
+        color: Color.fromRGBO(0, 0, 0, 1),
+        fontFamily: 'Inter',
+        fontSize: 36,
+        letterSpacing: 0 /*percentages not used in flutter. defaulting to zero*/,
+        fontWeight: FontWeight.normal,
+        height: 1
+      ),)
+      ),Positioned(
+        top: 24,
+        left: 333,
+        child: Container(
+        width: 29.36170196533203,
+        height: 30,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('assets/images/Mediumconnection5.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      ),Positioned(
+        top: 29,
+        left: 277,
+        child: Container(
+        width: 36,
+        height: 25,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('assets/images/Wifiv15.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      ),Positioned(
+        top: 12,
+        left: 0,
+        child: Container(
+        width: 35,
+        height: 35,
+        decoration: BoxDecoration(
+          image : DecorationImage(
+          image: AssetImage('assets/images/Icons8leftarrow483.png'),
+          fit: BoxFit.fitWidth
+      ),
+  )
+      )
+      ),
+        ]
+      )
+    );
+        }
+        }
+        
