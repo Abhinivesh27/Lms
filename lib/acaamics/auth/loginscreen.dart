@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:glassmorphism_ui/glassmorphism_ui.dart';
+import 'package:lms/acaamics/categories/categories.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -34,8 +35,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    LoginInput(hint: "username", lable: "Name"),
-                    LoginInput(hint: "Password", lable: "Pass")
+                    LoginInput(hint: "roll no", lable: "roll no"),
+                    LoginInput(hint: "Password", lable: "Pass"),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green.shade900
+                      ),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: ((context) => Categories())));
+                      }, 
+                      child: Text("Login"),
+                    )
                   ],
                 ),
                 )
@@ -76,3 +86,4 @@ class LoginInput extends StatelessWidget {
     );
   }
 }
+
