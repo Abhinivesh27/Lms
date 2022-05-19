@@ -1,45 +1,89 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+class LoginpageWidget extends StatefulWidget {
+  const LoginpageWidget({Key? key}) : super(key: key);
 
   @override
-  State<Login> createState() => _LoginState();
+  State<LoginpageWidget> createState() => _LoginpageWidgetState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginpageWidgetState extends State<LoginpageWidget> {
+  
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+    var buttonTitle = "Staff";
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: Stack(
+        decoration: BoxDecoration(
+          
+          image: DecorationImage(image: NetworkImage("https://velalarengg.ac.in/old/images/c33.jpg"),fit: BoxFit.cover)
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              
-              height: MediaQuery.of(context).size.height / 4,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: Colors.green.shade100,
-              ),
-              
-            ),
             Center(
-            child: Container(
-              height: MediaQuery.of(context).size.height / 2,
-              width: MediaQuery.of(context).size.width / 1.7,
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.circular(20)
+              child: Container(
+                height: height / 4,
+                width: width / 1.5,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    
+                      LoginButton(buttonTitle: "Staffs", height: height, width: width),
+                      Spacer(),
+                      LoginButton(buttonTitle: "Students", height: height, width: width),
+                  ],
+                ),
               ),
-              child: Text("Login"),
-            ),
-          ),]
-        )
+            )
+          ],
+        ),
       ),
+    );
+  }
+}
+
+class LoginButton extends StatelessWidget {
+  const LoginButton({
+    Key? key,
+    required this.buttonTitle,
+    required this.height,
+    required this.width,
+  }) : super(key: key);
+
+  final String buttonTitle;
+  final double height;
+  final double width;
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      
+    style: ElevatedButton.styleFrom(
+      primary: Colors.white60,
+    elevation: 50,
+    shadowColor: Colors.green,
+    
+    ),
+      onPressed: () {},
+      child: Container(   
+        child: Center(
+          child: Text(buttonTitle,
+          style: GoogleFonts.ubuntu(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.black87
+          )
+          )
+        ),
+        height: height / 10,
+        width: width / 2,
+        
+      )
     );
   }
 }

@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
               style: GoogleFonts.pacifico(fontSize: 30),
             ),
            SizedBox(height: 90,),
-            ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Login(),)), child: SizedBox(
+            ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginpageWidget(),)), child: SizedBox(
               width: MediaQuery.of(context).size.width / 4.5,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
