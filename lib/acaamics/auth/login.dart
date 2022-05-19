@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lms/acaamics/auth/loginscreen.dart';
 
 class LoginpageWidget extends StatefulWidget {
   const LoginpageWidget({Key? key}) : super(key: key);
@@ -69,7 +70,9 @@ class LoginButton extends StatelessWidget {
     shadowColor: Colors.green,
     
     ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: ((context) => LoginScreen() )));
+      },
       child: Container(   
         child: Center(
           child: Text(buttonTitle,
