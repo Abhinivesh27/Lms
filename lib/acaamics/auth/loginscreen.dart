@@ -39,13 +39,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     LoginInput(hint: "Password", lable: "Pass"),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.green.shade900
+                        primary: Colors.green.shade600,
                       ),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: ((context) => Categories())));
                       }, 
                       child: Text("Login"),
-                    )
+                    ),
+
                   ],
                 ),
                 )
